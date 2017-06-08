@@ -1,19 +1,23 @@
 package Shape.circle;
 
 import Shape.Shape;
+import Shape.ShapeFactory;
 
-public class CircleFactory {
+public class CircleFactory extends ShapeFactory {
 
-    public static Shape create() {
+    public static Shape create(String color) {
 
         Shape circle = new Circle();
 
-        init();
+        init(circle, color);
 
         return circle;
+
     }
 
-    private static void init() {
+    public static void init(Shape shape, String color) {
+
+        shape.setColor(color);
 
     }
 

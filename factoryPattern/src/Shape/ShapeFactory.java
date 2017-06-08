@@ -1,9 +1,15 @@
 package Shape;
 
-import Shape.*;
+public class ShapeFactory {
 
-public abstract class ShapeFactory {
+    public static Shape create(String color){
 
-    public abstract Shape create();
+        return null;
+
+    }
+
+    public static void init(Shape shape, String color){
+
+    }
 
 }

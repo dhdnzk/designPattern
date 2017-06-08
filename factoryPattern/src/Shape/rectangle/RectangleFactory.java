@@ -1,20 +1,22 @@
 package Shape.rectangle;
 
 import Shape.Shape;
+import Shape.ShapeFactory;
 
-public class RectangleFactory {
+public class RectangleFactory extends ShapeFactory {
 
-    public static Shape create() {
+    public static Shape create(String color) {
 
         Shape rectangle = new Rectangle();
 
-        init();
+        init(rectangle, color);
 
         return rectangle;
     }
 
-    private static void init() {
+    public static void init(Shape shape, String color) {
+
+        shape.setColor(color);
 
     }
-
 }
