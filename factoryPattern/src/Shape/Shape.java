@@ -2,7 +2,7 @@ package Shape;
 
 public interface Shape {
 
-    void setColor();
+    void setColor(String color);
 
     void draw();
 
